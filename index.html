@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <title>WhatsApp Link Generator</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="fixed-top navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Link Generator</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#form">Buat Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contributor">Kontributor</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron my-5">
+        <div class="container">
+            <h1 class="display-4"><b>WhatsApp Link Generator</b></h1>
+            <p class="lead">Made for you, with ❤️</p>
+        </div>
+    </div>
+    <!-- Akhir Jumbotron -->
+
+    <!-- Form -->
+    <section id="form" class="my-5">
+        <div class="container">
+            <form action="" class="my-5">
+                <div class="form-group">
+                    <label for="nomor">Nomor WhatsApp tujuan:</label>
+                    <input type="text" class="form-control" name="nomor" placeholder="+6288888888888">
+                </div>
+                <div class="form-group">
+                    <label for="content">Isi pesan:</label>
+                    <textarea class="form-control" name="content" rows="3"></textarea>
+                </div>
+                <button onclick="buatLink()" type="button" class="btn btn-primary my-1">Submit</button>
+            </form>
+            <div class="card">
+                <div id="link" class="card-body">
+                    Link akan muncul di sini!
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Form -->
+
+    <!-- Kontributor -->
+    <section id="contributor" class="my-5">
+        <div class="container">
+            <h2>Kontributor</h2>
+            <ol>
+                <li>it's you ⭐</li>
+                <li id="rasyad">Muhammad Rasyad C <a href="https://www.linkedin.com/in/m-rasyad-c-50879814a"
+                        class="fa fa-linkedin"></a><a href="https://github.com/mrasyadc" class="fa fa-github"></a></li>
+                <li><a href="">I want to contribute too!</a></li>
+            </ol>
+        </div>
+    </section>
+    <!-- Akhir Kontributor -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container py-5 text-center">
+            <b>WhatsApp Link Generator</b>
+            <p>This page is open source, Noticed a typo? Or something unclear?</p>
+            <a href="">You can improve this page on GitHub</a>
+        </div class>
+        </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+
+
+    <!-- My Javascript -->
+    <script src="app.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
