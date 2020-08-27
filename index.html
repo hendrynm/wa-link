@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <!-- Required meta tags -->
@@ -23,7 +23,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="fixed-top navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="fixed-top navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Link Generator</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#">Beranda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#form">Buat Link</a>
@@ -59,17 +59,20 @@
 
     <!-- Form -->
     <section id="form" class="my-5">
-        <div class="container">
+        <div class="container col-lg-6">
             <form action="" class="my-5">
-                <div class="form-group">
+                <div class="form-group text-center">
                     <label for="nomor">Nomor WhatsApp tujuan:</label>
-                    <input type="text" class="form-control" name="nomor" placeholder="+6288888888888">
+                    <input type="text" class="form-control" name="nomor" id="nomor" placeholder="+6281234567890">
                 </div>
-                <div class="form-group">
+                <div class="form-group text-center">
                     <label for="content">Isi pesan:</label>
-                    <textarea class="form-control" name="content" rows="3"></textarea>
+                    <textarea class="form-control" name="content" id="content" placeholder="Tuliskan pesanmu disini" rows="3"></textarea>
                 </div>
-                <button onclick="buatLink()" type="button" class="btn btn-primary my-1">Submit</button>
+                <div class="form-group text-center">
+                    <button onclick="validasi()" type="button" class="btn btn-primary my-1">Submit</button>
+                    <button onclick="hapus()" type="button" class="btn btn-danger my-1">Reset</button>
+                </div>
             </form>
             <div class="card">
                 <div id="link" class="card-body">
@@ -83,7 +86,7 @@
     <!-- Kontributor -->
     <section id="contributor" class="my-5">
         <div class="container">
-            <h2>Kontributor</h2>
+            <h2>&nbsp Kontributor</h2>
             <ol>
                 <li>it's you ⭐</li>
                 <li id="rasyad">Muhammad Rasyad C <a href="https://www.linkedin.com/in/m-rasyad-c-50879814a"
@@ -100,7 +103,6 @@
             <b>WhatsApp Link Generator</b>
             <p>This page is open source, Noticed a typo? Or something unclear?</p>
             <a href="https://github.com/mrasyadc/wa-link">You can improve this page on GitHub</a>
-        </div class>
         </div>
     </footer>
     <!-- Akhir Footer -->
