@@ -36,3 +36,14 @@ function hapus(){
     document.getElementById("nomor").value = "";
     document.getElementById("content").value = "";
 }
+
+// Dark Mode
+{
+    const tema = document.getElementById("tema");
+    tema.addEventListener("click", function() {
+        document.body.classList.toggle("dark");
+        $(".jumbotron").toggleClass("dark");
+        $(".form-control").toggleClass("dark");
+        $(".card").toggleClass("dark");
+    })
+}
