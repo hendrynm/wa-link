@@ -15,33 +15,41 @@ function buatLink() {
 
 function validasi() {
     let nomorWhatsApp = document.getElementById("nomor").value;
-    if(nomorWhatsApp===""){
+    if (nomorWhatsApp === "") {
         document.getElementById("link").innerHTML = "<div class='card alert alert-danger'>" +
             "Nomor WhatsApp tidak boleh kosong</div>";
-    } else if(!(nomorWhatsApp.includes("+628"))){
+    } else if (!(nomorWhatsApp.includes("+628"))) {
         document.getElementById("link").innerHTML = "<div class='card alert alert-danger'>" +
             "Nomor WhatsApp yang kamu masukkan tidak diawali dengan +628</div>";
-    } else if(nomorWhatsApp.length<12){
+    } else if (nomorWhatsApp.length < 12) {
         document.getElementById("link").innerHTML = "<div class='card alert alert-danger'>" +
             "Nomor WhatsApp yang kamu masukkan kurang dari 10 digit.</div>";
-    } else if(nomorWhatsApp.length>15){
+    } else if (nomorWhatsApp.length > 15) {
         document.getElementById("link").innerHTML = "<div class='card alert alert-danger'>" +
             "Nomor WhatsApp yang kamu masukkan lebih dari 13 digit.</div>";
-    } else{
+    } else {
         buatLink();
     }
 }
 
-function hapus(){
+function hapus() {
     document.getElementById("nomor").value = "";
     document.getElementById("content").value = "";
 }
 
 // Dark Mode
 {
+    let i = 0;
     const tema = document.getElementById("tema");
-    tema.addEventListener("click", function() {
+    tema.addEventListener("click", function () {
         document.body.classList.toggle("dark");
+        $("#tema").toggleClass("btn-dark btn-light")
+        if (i % 2 === 0) {
+            document.getElementById("tema").innerHTML = "Light mode";
+        } else {
+            document.getElementById("tema").innerHTML = "Dark mode";
+        }
+        i++;
         $(".jumbotron").toggleClass("dark");
         $(".form-control").toggleClass("dark");
         $(".card").toggleClass("dark");

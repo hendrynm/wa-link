@@ -4,13 +4,24 @@
 <head>
     <!--   Google Analytics   -->
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TDBM5K2');</script>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TDBM5K2');
+    </script>
     <!-- End Google Tag Manager -->
-    
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -32,10 +43,10 @@
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDBM5K2"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDBM5K2" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
+
     <!-- Navbar -->
     <nav class="fixed-top navbar navbar-expand-lg navbar-dark">
         <div class="container">
@@ -44,7 +55,6 @@
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
@@ -58,10 +68,6 @@
                     </li>
                 </ul>
             </div>
-
-            <div id="tema">
-                <span href="#">Dark / Light</span>
-            </div>
         </div>
     </nav>
     <!-- Akhir Navbar -->
@@ -71,6 +77,7 @@
         <div class="container">
             <h1 class="display-4"><b>WhatsApp Link Generator</b></h1>
             <p class="lead">Made for you, with <i class="fas fa-heart red" style="color:red;"></i></p>
+            <button id="tema" type="button" class="btn btn-dark">Coba dark mode</button>
         </div>
     </div>
     <!-- Akhir Jumbotron -->
@@ -85,7 +92,8 @@
                 </div>
                 <div class="form-group text-center">
                     <label for="content">Isi pesan:</label>
-                    <textarea class="form-control" name="content" id="content" placeholder="Tuliskan pesanmu disini" rows="3"></textarea>
+                    <textarea class="form-control" name="content" id="content" placeholder="Tuliskan pesanmu disini"
+                        rows="3"></textarea>
                 </div>
                 <div class="form-group text-center">
                     <button onclick="validasi()" type="button" class="btn btn-success my-1">Buat Link WhatsApp</button>
